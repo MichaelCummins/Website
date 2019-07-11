@@ -1,0 +1,129 @@
+body {
+	background-color: #b3b3ff;    
+}
+
+.inputAndOutput {
+	resize: none;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	background-color: pink;
+	border: solid;
+    font-size: 18px;
+    width: 600px;
+    height: 650px;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.button {
+	text-align: center;
+	padding: 15px 32px;
+	color: black;
+    border: solid;
+    background-color: pink;
+    font-size: 18px;
+}
+
+.center {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.ast{
+    background-color: pink;
+    border: solid;
+    font-size: 18px;
+    border-color: black;
+    overflow-y: scroll;
+	margin-left: 50px;
+	margin-right: 50px;
+    margin-bottom: 50px;
+    resize: none;
+    
+}
+
+.trees{
+    padding-top: 50px;
+}
+
+header {
+	text-align: center;
+}
+
+.input {
+    text-align: left;
+    padding-left: 15%;
+}
+
+.output {
+	text-align: right;
+    padding-right: 15%;
+}
+
+.error{
+    color: red;
+}
+
+.warning{
+    color: blue;
+}
+
+.success{
+    color: green;
+}
+
+.CodeGen{
+	resize: none;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	background-color: pink;
+	border: solid;
+    font-size: 18px;
+    width: 1000px;
+    height: 200px;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+select{
+    background-color: lightpink;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 275px;
+    height: 50px;
+    font-size: 20px;
+    border: solid;
+}
+
+.MainCategory{
+    font-size: 30px;
+    color: brown;
+}
+
+.MainCategorySuccess{
+    font-size: 30px;
+    color: forestgreen;
+}
+
+
+.SubCategoryFails{
+    font-size: 20px;
+    color: red;
+}
+
+.SubCategorySuccess{
+    font-size: 20px;
+    color: green;
+}
+
+.SubCategoryWarning{
+    font-size: 20px;
+    color: lightgoldenrodyellow;
+}

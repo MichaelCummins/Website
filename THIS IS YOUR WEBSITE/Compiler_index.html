@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <TITLE>Michael Cummins Compiler Project</TITLE>
+    <LINK rel="stylesheet" type="text/css" href="CompilerCSS.css"/>
+    <script type = "text/javascript" src = "TestCases.js"></script>
+    <script type = "text/javascript" src = "Tree.js"></script>
+    <script type = "text/javascript" src = "staticData.js"></script>
+    <script type = "text/javascript" src = "Jump.js"></script>
+    <script type = "text/javascript" src = "opCodes.js"></script>
+    <script type = "text/javascript" src = "stringTable.js"></script>
+    <script type = "text/javascript" src = "Symbol.js"></script>
+    <script type = "text/javascript" src = "symbolTree.js"></script>
+    <script type = "text/javascript" src = "Lexer.js"></script>
+    <script type = "text/javascript" src = "Tokens.js"></script>
+    <script type = "text/javascript" src = "Utilities.js"></script>
+    <script type = "text/javascript" src = "Parser.js"></script>
+    <script type = "text/javascript" src = "Compiler.js"></script>
+    <script type = "text/javascript" src = "Analyze.js"></script>
+    <script type = "text/javascript" src = "CodeGeneration.js"></script>
+  </HEAD>
+  <BODY onload = "init();">
+    <DIV class = "center">  
+    <h1>Cummins Compiler</h1>
+        <DIV>
+            <select onchange = "fillTextArea(value)">
+                <option class = "MainCategory" value = "Select_Test_Case" disabled>--Select Test Case--</option>
+                
+                <option class = "MainCategory" value = "Successful Tests" disabled>--Successful Tests</option>
+                <option class = "SubCategory" value = "Simple">Simple</option>
+                <option class = "SubCategory" value = "Print String">Print String</option>
+                <option class = "SubCategory" value = "Addition then print">Addition then print</option>
+
+                <option class = "MainCategory" value = "--Lex Errors--" disabled>--Lex Errors--</option>
+                <option class = "SubCategoryFails" value = "Project_1">Project 1 </option>
+                <option class = "SubCategoryFails" value = "NeverEndingString">Invalid String syntax</option>
+                <option class = "SubCategoryFails" value = "AllInvalidCharacters">All invalid characters</option>
+                
+                <option class = "MainCategory" value = "--Lex Warnings--" disabled>--Lex Warnings--</option>
+                <option class = "SubCategoryWarning" value = "No EOP marker">No End of program Marker</option>
+                
+                <option class = "MainCategory" value = "--Parse Errors--" disabled>--Parse Errors--</option>
+                <option class = "SubCategoryFails" value = "Project_1">Project 2</option>
+                <option class = "SubCategoryFails" value = "Print($)">Print($)</option>
+                <option class = "SubCategoryFails" value = "Invalid String Declaration">Invalid String Declaration</option>
+                
+                <option class = "MainCategory" value = "--Parse Warnings--" disabled>--Parse Warnings</option>
+                <option class = "SubCategoryWarning" value = ""</option>
+                <option class = "SubCategoryWarning" value = ""</option>
+                <option class = "SubCategoryWarning" value = ""</option>
+
+                <option class = "MainCategory" value = "--Analyzer Errors--" disabled>--Analyzer Errors--</option>
+                <option class = "SubCategoryFails" value = "Undeclared Variable">Undeclared Variable</option>
+                <option class = "SubCategoryFails" value = "String == int">String == int</option>
+                <option class = "SubCategoryFails" value = "Variable Redeclaration">Variable Redeclaration</option>
+                
+                <option class = "MainCategory" value = "--Analyzer Warnings--" disabled>--Analyzer Warnings</option>
+                <option class = "SubCategoryWarning" value = ""</option>
+                <option class = "SubCategoryWarning" value = ""</option>
+                <option class = "SubCategoryWarning" value = ""</option>
+
+                <option class = "MainCategory" value = "--Code Gen Errors--" disabled>--Code Gen Errors--</option>
+                <option class = "SubCategoryFails" value = "Memory Overflow">Memory Overflow</option>
+
+            </select>
+        </DIV>
+        <TEXTAREA id="SourceCodeInput" class = "inputAndOutput" rows = "30" cols = "50" placeholder = '1. Enter input here 2. hit the button'></TEXTAREA>
+        <TEXTAREA id="CompiledCodeOutput" class = "inputAndOutput" rows = "30" cols = "50" readonly placeholder = 'Output will appear here'></TEXTAREA></br>
+        <INPUT class = "button" type = "button" id = "CompileThis" value = "Compile Code" onclick = "compile()"/>
+        <DIV class = "trees">
+            <TEXTAREA id = "AbstractSyntaxTree" class = "ast" rows = "20" cols = "30" readonly></TEXTAREA>
+            <TEXTAREA id = "ConcreteSyntaxTree" class = "ast" rows = "20" cols = "30" readonly></TEXTAREA>
+        </DIV>
+        <DIV>
+            <TEXTAREA id = "CodeGenOutput" class = "CodeGen" rows = "8" cols = "16" readonly></TEXTAREA>
+        </DIV>
+    </DIV>
+  </BODY>
+</HTML>
