@@ -49,7 +49,7 @@ Highcharts.chart('skillsChart', {
             name: 'Highcharts',
             y: 1
         }, {
-            name: 'JQuery',
+            name: 'jQuery',
             y: 3
         }, {
             name: 'Python',
