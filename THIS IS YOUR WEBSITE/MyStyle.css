@@ -12,11 +12,6 @@ body, html{
     background-attachment: fixed;
 }
 
-@media only screen and (max-device-width: 375px) and (max-device-width:667px){
-    body.palette-primary.custom-background {
-    background-size: auto 100%;
-    }
-}
 
 .header{
     padding-top: 5%;
@@ -81,9 +76,7 @@ hr.separator{
     padding-top: 25px;
 }
 
-.font30{
-    font-size: 30px;
-}
+
 
 .footer{
     background-color: rebeccapurple;
