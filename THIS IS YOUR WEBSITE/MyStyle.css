@@ -12,6 +12,12 @@ body, html{
     background-attachment: fixed;
 }
 
+@media only screen and (max-device-width: 375px) and (max-device-width:667px){
+    body.palette-primary.custom-background {
+    background-size: auto 100%;
+    }
+}
+
 .header{
     padding-top: 5%;
 }
