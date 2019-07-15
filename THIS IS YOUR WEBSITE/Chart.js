@@ -8,15 +8,23 @@ Highcharts.chart('skillsChart', {
         plotBorderWidth: null,
         plotShadow: false,
         type: 'pie',
-        backgroundColor:'rgba(255, 255, 255, 0.0)'
+        backgroundColor:'rgba(255, 255, 255, 0.0)',
     },
     
     title: {
-        text: 'Skill distribution'
+        text: 'Skill distribution',
+        style: {
+            fontSize: '22px',
+            fontWeight: 'bold'
+        }
     },
     
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+        style: {
+            fontSize: '22px',
+            fontWeight: 'bold'
+        }
     },
     
     plotOptions: {
@@ -28,6 +36,7 @@ Highcharts.chart('skillsChart', {
                 format: '<b>{point.name}</b>: {point.percentage:.1f} %'
             }
         }
+        
     },
     
     series: [{
