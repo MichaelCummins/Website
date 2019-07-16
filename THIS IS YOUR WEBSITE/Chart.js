@@ -44,28 +44,28 @@ Highcharts.chart('skillsChart', {
         colorByPoint: true,
         data: [{
             name: 'HTML',
-            y: 35
-        }, {
-            name: 'CSS',
-            y: 11
-        }, {
-            name: 'JavaScript',
             y: 20
         }, {
+            name: 'CSS',
+            y: 25
+        }, {
+            name: 'JavaScript',
+            y: 15
+        }, {
             name: 'Bootstrap',
-            y: 9
+            y: 10
         }, {
             name: 'Highcharts',
-            y: 1
+            y: 5
         }, {
             name: 'jQuery',
-            y: 3
+            y: 5
         }, {
             name: 'Python',
-            y: 1.2
+            y: 2
         }, {
             name: 'SQL',
-            y: 16
+            y: 5
         }, {
             name: 'Java',
             y: 25
