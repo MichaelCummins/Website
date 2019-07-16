@@ -9,6 +9,8 @@ Highcharts.chart('skillsChart', {
         plotShadow: false,
         type: 'pie',
         backgroundColor:'rgba(255, 255, 255, 0.0)',
+        width: 600,
+        height: 600
     },
     
     title: {
