@@ -7,23 +7,24 @@
         <link rel = "stylesheet" text = "text/css" href = "MyStyle.css"/>
     </head>
     
-    <body>
+    <body id = "top">
         
-        <div class="bg">
+        <div class = "bg">
             <div>
                 <nav class  = "container-fluid navbar navbar-expand-lg navbar-light bg-info fixed-top">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class = "justify-content-center collapse navbar-collapse" id = "collapsibleNavbar">
+                        <img src = "Monogram.png" alt = "monogram" height = "114" width = "84" style="opacity: .8; margin-top: 1%; float: left ">
                         <a class = "nav-link text-light" href = "#home">Home</a>
                         <a class = "nav-link text-light" href = "#about">About</a>
                         <a class = "nav-link text-light" href = "#projects">Projects</a>
                         <a class = "nav-link text-light" href = "#skills">Skills</a>
-                        <img src = "Monogram.png" alt = "monogram" height = "114" width = "84" style="opacity: .8; margin-top: 1%">
                         <a class = "nav-link text-light" href = "#volunteer">Work Experience</a>
                         <a class = "nav-link text-light" href = "#contact">Contact</a>
                         <a class = "nav-link text-light" href = "Michael_Cummins_Resume.pdf" target = "_blank">Resume</a>
+                        <a href="#top" onclick="scrollToTop();return false" class="noBlueOnBlue">Back to Top &uarr;</a>
                     </div>
                 </nav>
             </div>
