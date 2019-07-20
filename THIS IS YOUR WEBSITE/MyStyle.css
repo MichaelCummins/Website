@@ -13,18 +13,13 @@ body, html{
     background-attachment: fixed;
 }
 
-
-.header{
-    padding-top: 5%;
-}
-
 .fa {
     padding: 20px;
-    font-size: 50px;
-    width: 100px;
+    font-size: 30px;
+    width: 70px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 2px 5px 5px;
     border-radius: 50%;
     opacity: .9;
 }
@@ -72,8 +67,15 @@ hr{
     padding-top: 25px;
 }
 
+.volunteer{
+    background-color: #7A8B8B;
+    color: floralwhite;
+    display: block;
+    padding-top: 25px;
+}
+
 .footer{
-    background-color: rebeccapurple;
+    background-color: #8968CD;
     color: floralwhite;
     display: block;
     padding-bottom: 25px;
@@ -98,12 +100,8 @@ hr{
 
 img{
     padding-bottom: 2%;
-
 }
 
-.progressBar{
-    width: 40px;
-}
 
 .padding{
     padding-bottom: 10%;
@@ -118,3 +116,19 @@ nav{
 a:hover{
     text-decoration: none;
 }
+
+.carouselBoarder{
+    border: 10px;
+    border-color: #b3b3ff;
+    border-style: solid;
+}
+
+.carousel-item{
+    padding-left: 10px;
+
+}
+
+#carouselExampleIndicators{
+    background-color:  #ffa366;
+}
+

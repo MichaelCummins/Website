@@ -2,12 +2,9 @@
 <html>
     <head>
         <title> Michael Cummins Website</title>
-  <!--      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" text = "text/css" href = "MyStyle.css"/>
-        
-
     </head>
     
     <body>
@@ -22,8 +19,9 @@
                         <a class = "nav-link text-light" href = "#home">Home</a>
                         <a class = "nav-link text-light" href = "#about">About</a>
                         <a class = "nav-link text-light" href = "#projects">Projects</a>
-                        <img src = "Monogram.png" alt = "monogram" height = "114" width = "84" style="opacity: .8; margin-top: 1%">
                         <a class = "nav-link text-light" href = "#skills">Skills</a>
+                        <img src = "Monogram.png" alt = "monogram" height = "114" width = "84" style="opacity: .8; margin-top: 1%">
+                        <a class = "nav-link text-light" href = "#volunteer">Volunteer Work</a>
                         <a class = "nav-link text-light" href = "#contact">Contact</a>
                         <a class = "nav-link text-light" href = "Michael_Cummins_Resume.pdf" target = "_blank">Resume</a>
                     </div>
@@ -45,9 +43,7 @@
                 <div class = "container square">
                     <h1 class = "display-3">About me</h1>
                     <hr>
-                    
                     <p class = "h3">I graduated from Marist college in May of 2019 with a Bachelors in Computer Science, as well as minors in Information Technology, Information Systems, and Cybersecurity. Currently, my main goal is to find an entry-level software development position that will allow me to utilize and build upon my current software knowledge.</p>
-                    
                 </div>
             </section>
             <section class = "projects" id = "projects">
@@ -61,7 +57,6 @@
                             <a class= "noBlueOnBlue" href = "https://github.com/MichaelCummins/Projects/tree/master/Compiler" target="_blank">Source code</a>
                         </div>
                         <p class = "h5">The Cummins Compiler is a recursive descent parser based on a LL(1) grammar. The Compiler goes through each step of the compilation process: lexing, parsing, semantic analysis, and code generation. The UI of the compiler also offers a view of the Abstract Syntax Tree and Concrete Syntax Tree located near the bottom of the page along with the machine code. Created design using HTML and CSS. Compiler developed using JavaScript.</p>
-
                     </div>
                     <br>
                     <div class = "text-left">
@@ -83,17 +78,116 @@
                 </div>
             </section>
             <section class = "skills" id = "skills">
-                <div class = "container" style = "height: 900px">
+                <div class = "container pb-5">
                     <br>
                     <h1 class = "display-3 text-center">Skills</h1>
                     <hr>
-                    <div class = "text-center">
-                        <div id = "skillsChart" style = "height: 100%; width: 100%; position: relative; overflow: hidden;"></div>
+                    <div class = "row">
+                        <div class = "col-sm">
+                            <div id = "skillsChart" style = "padding-right: 3%; width: 100%;"></div>
+                        </div>
+                        <div class = "col-sm">
+<div>
+                            <h4>Proficiency</h4>
+                            <div id = "skillsChart" class = "list-group list-group-striped push-top">
+                                <div class = "list-group-item" >
+                                <div class = "text-medium">HTML</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">Java</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">CSS</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">JavaScript</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">SQL</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">Bootstrap</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">jQuery</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">Python</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class = "list-group-item">
+                                <div class = "text-medium">Highcharts</div>
+                                    <div class = "progress progress-success">
+                                        <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class = "volunteer" id = "volunteer">
+                <div class = "container square pb-5">
+                    <div class = "justify-content-center">
+                        <br>
+                        <h1 class = "display-3 text-center">Volunteer Work</h1>
+                        <hr>
+                        <div id="carouselExampleIndicators" class="carousel slide carouselBoarder" data-ride="carousel" data-interval = "5000" style = "height: 700px; width: 100%">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="img-fluid" src="ESports.png" alt="First slide">
+                                    <h2 class = "pl-5 pr-5 ">eSports Coach & Analyst</h2>
+                                    <h4 class = "pl-5 pr-5 ">September 2017 - May 2019</h4>
+                                    <p class = "h5 d-none d-lg-block d-xl.none pl-5 pr-5">As someone who has been watching the eEsports scene grow and become the recognized phenomenon it is today, it was a lifetime achievement of mine to not only play, but also coach competitive eSports at the collegiate level. My duties included evaluating player performance, mediating disputes among the team, and coaching lower ranked players.</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="Ruff%20house.png" alt="Second slide">
+                                    <h2 class = "pl-5 pr-5">Remote volunteer</h2>
+                                    <p class = "h5 d-none d-lg-block d-xl.none pl-5 pr-5">Currently, I am working on becoming a volunteer at Ruff House Rescue. The Rescue is a non-profit on the south Shore of Long Island. </p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class = "footer" id = "contact">
-                <div class = "container text-center" style = "padding-bottom: 5%">
+                <div class = "container text-center pb-4">
                     <h2 class="display-3">Thank you!</h2>
                     <p class = "h5"> Feel free to email me at Mcjanuary19@gmail.com</p>
                     <br>
