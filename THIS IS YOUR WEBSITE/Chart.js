@@ -7,6 +7,9 @@ function scrollToTop() {
     } else clearTimeout(scrollAnimation);
 }
 
+
+
+
 window.onload = function() {
 
 Highcharts.chart('skillsChart', {

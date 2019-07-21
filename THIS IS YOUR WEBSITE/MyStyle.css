@@ -88,15 +88,6 @@ hr{
     height: 40%;
 }
 
-.noBlueOnBlue{
-    color: floralwhite;
-    font-size: 30px;
-    background-color: #36454f;
-}
-
-.noBlueOnBlue:hover{
-    color: gray;
-}
 
 img{
     padding-bottom: 2%;

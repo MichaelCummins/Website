@@ -22,9 +22,9 @@
                         <a class = "nav-link text-light" href = "#projects">Projects</a>
                         <a class = "nav-link text-light" href = "#skills">Skills</a>
                         <a class = "nav-link text-light" href = "#volunteer">Work Experience</a>
-                        <a class = "nav-link text-light" href = "#contact">Contact</a>
+                        <a id = "toggle" class = "nav-link text-light" href = "javascript">Contact</a>
                         <a class = "nav-link text-light" href = "Michael_Cummins_Resume.pdf" target = "_blank">Resume</a>
-                        <a href="#top" onclick="scrollToTop();return false" class="noBlueOnBlue">Back to Top &uarr;</a>
+                        <a href="#top" onclick="scrollToTop();return false" class="btn-info">Back to Top &uarr;</a>
                     </div>
                 </nav>
             </div>
@@ -48,34 +48,32 @@
                 </div>
             </section>
             <section class = "projects" id = "projects">
-                <div class = "container square">
+                <div class = "container">
                     <h1 class = "display-3 text-center">Projects</h1>
                     <hr>
-                    <div class = "text-right">
-                        <h2 class = "display-3"> The Cummins Compiler</h2>
-                        <div style = "padding-bottom: 10px">
-                            <a class= "noBlueOnBlue" href = "Compiler_index.html" target="_blank">Project link</a>
-                            <a class= "noBlueOnBlue" href = "https://github.com/MichaelCummins/Projects/tree/master/Compiler" target="_blank">Source code</a>
+                    <div class = "row">
+                        <div class = "col-md bg-light text-dark shadow-lg ml-1 mr-1 pb-3">
+                            <h2>The Cummins Compiler</h2>
+                            <p class = "h5">The Cummins Compiler is a recursive descent parser based on a LL(1) grammar. The Compiler goes through each step of the compilation process: lexing, parsing, semantic analysis, and code generation. The UI of the compiler also offers a view of the Abstract Syntax Tree and Concrete Syntax Tree located near the bottom of the page along with the machine code. Created design using HTML and CSS. Compiler developed using JavaScript.</p>
+                            <div>
+                                <a class= " btn btn-info" href = "https://github.com/MichaelCummins/Projects/tree/master/Compiler" target="_blank">Source code</a>
+                                <a class= " btn btn-info" href = "Compiler_index.html" target="_blank">Project link</a>
+                            </div>
                         </div>
-                        <p class = "h5">The Cummins Compiler is a recursive descent parser based on a LL(1) grammar. The Compiler goes through each step of the compilation process: lexing, parsing, semantic analysis, and code generation. The UI of the compiler also offers a view of the Abstract Syntax Tree and Concrete Syntax Tree located near the bottom of the page along with the machine code. Created design using HTML and CSS. Compiler developed using JavaScript.</p>
+                        <div class = "col-md bg-light text-dark shadow-lg ml-1 mr-1 pb-3">
+                            <h2>Password verifier</h2>
+                            <p class = "h5">This password validator is a java program that uses a Definite Finite Automata (DFA) to determine whether input from the user is a strong or weak password. The criteria used in constructing the DFA were: at least 1 uppercase letter, 1 lowercase letter, 1 digit, and 1 special character. This program is an easy to use application that enables users to choose the best password in order to enhance their personal security. Created using only Java.
+                            </p>
+                            <a class= " btn btn-info" href = "https://github.com/MichaelCummins/CMPT440Cummins/tree/master/Prj/code" target="_blank">Source code</a>
+                         <!--   <a id = "passwordProject" class = " btn btn-info" href = "Compiler_index.html" target = "_blank"> Project Link</a>-->
+                        </div>
+                        <div class = "col-md bg-light text-dark shadow-lg ml-1 mr-1 pb-3">
+                            <h2>My website</h2>
+                            <p class = "h5">This website was created using HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Its primary purpose is to showcase my abilities as a programmer which include: front-end development, graphic design, web formatting, and user experience.</p>
+                            <a class = " btn btn-info" href = "https://github.com/MichaelCummins/Website/tree/master/THIS%20IS%20YOUR%20WEBSITE" target = "_blank">Source Code</a>
+                        </div>
                     </div>
                     <br>
-                    <div class = "text-left">
-                        <h2 class = "display-3"> Password Validator</h2>
-                        <div style = "padding-bottom: 10px">
-                            <a class= "noBlueOnBlue" href = "https://github.com/MichaelCummins/CMPT440Cummins/tree/master/Prj/code" target="_blank">Source code</a>
-                            <a class = "noBlueOnBlue" href = "Compiler_index.html" target = "_blank"> Project Link</a>
-                        </div>
-                        <p class = "h5">This password validator is a java program that uses a Definite Finite Automata (DFA) to determine whether input from the user is a strong or weak password. The criteria used in constructing the DFA were: at least 1 uppercase letter, 1 lowercase letter, 1 digit, and 1 special character. This program is an easy to use application that enables users to choose the best password in order to enhance their personal security. Created using only Java.
-                        </p>
-                    </div>
-                    <div class = "text-right">
-                        <h2 class = "display-3"> My Website</h2>
-                        <div style = "padding-bottom: 10px">
-                            <a class = "noBlueOnBlue" href = "https://github.com/MichaelCummins/Website/tree/master/THIS%20IS%20YOUR%20WEBSITE" target = "_blank">Source Code</a>
-                        </div>
-                        <p class = "h5">This website was created using HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Its primary purpose is to showcase my abilities as a programmer which include: front-end development, graphic design, web formatting, and user experience.</p>
-                    </div>
                 </div>
             </section>
             <section class = "skills" id = "skills">
@@ -94,55 +92,55 @@
                                 <div class = "list-group-item" >
                                 <div class = "text-medium">HTML</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">Java</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">CSS</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">JavaScript</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">SQL</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">75%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">Bootstrap</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">75%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">jQuery</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">65%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">Python</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">50%</div>
                                     </div>
                                 </div>
                                 <div class = "list-group-item">
                                 <div class = "text-medium">Highcharts</div>
                                     <div class = "progress progress-success">
-                                        <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">40%</div>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +193,7 @@
             <section class = "footer" id = "contact">
                 <div class = "container text-center pb-4">
                     <h2 class="display-3">Thank you!</h2>
-                    <p class = "h5"> Feel free to email me at Mcjanuary19@gmail.com</p>
+                    <p class = "h3">Feel free to email me at Mcjanuary19@gmail.com</p>
                     <br>
                     <img src ="Monogram.png" alt = "monogram" height = "104" width = "84">
                     <ul class = "nav justify-content-center">
