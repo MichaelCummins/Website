@@ -8,10 +8,31 @@
     </head>
     
     <body id = "top">
-        
-        <div class = "bg">
+        <div id = "sidebar" class = "sidebar bg-secondary text-light">
+            <h1 class = "display-5 pl-4">Contact me</h1>
+            <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">Close</a>
+            <form name = "contact" method = "POST" data-netlify = "true">
+                <div class = "form-group w-50 pl-4">
+                    <label for = "name">Name</label>
+                    <input name = "name" type = "name" class = "form-control" id = "name" placeholder="Enter name">
+                </div>
+                <div class = "form-group w-50 pl-4">
+                    <label for = "email">Email address</label>
+                    <input name = "email" type = "email" class = "form-control" id = "email" placeholder="Enter email">
+                </div>
+                
+                <div class = "form-group w-75 pl-4"> 
+                    <label for = "message">Message</label>
+                    <div>
+                        <textarea name = "message" placeholder = "Enter message"></textarea>
+                    </div>
+                </div>
+                <button class = "btn btn-primary w-25 ml-4" type = "submit" value = "Send Message">Send Message</button>
+            </form>
+        </div>
+        <div id = "main" class = "bg">
             <div>
-                <nav class  = "container-fluid navbar navbar-expand-lg navbar-light bg-info fixed-top">
+                <nav id = "navBar" class  = "container-fluid navbar navbar-expand-lg navbar-light bg-info fixed-top">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -22,7 +43,7 @@
                         <a class = "nav-link text-light" href = "#projects">Projects</a>
                         <a class = "nav-link text-light" href = "#skills">Skills</a>
                         <a class = "nav-link text-light" href = "#volunteer">Work Experience</a>
-                        <a id = "toggle" class = "nav-link text-light" href = "javascript">Contact</a>
+                        <a id = "toggle" class = "nav-link text-light" onclick="toggleSideBar()">Contact Me</a>
                         <a class = "nav-link text-light" href = "Michael_Cummins_Resume.pdf" target = "_blank">Resume</a>
                         <a href="#top" onclick="scrollToTop();return false" class="btn-info">Back to Top &uarr;</a>
                     </div>
@@ -30,7 +51,7 @@
             </div>
             <section class = "container text-center padding" id = "home">
                 <h1 class = "display-1 shadow p-3 mb-5" >Michael Cummins</h1>
-                <p class = "display-4">Software Developer</p>
+                <p class = "display-4 shadow">Software Developer</p>
                 <hr>
                 
                 <ul class = "nav justify-content-center">
@@ -67,10 +88,10 @@
                             <a class= " btn btn-info" href = "https://github.com/MichaelCummins/CMPT440Cummins/tree/master/Prj/code" target="_blank">Source code</a>
                          <!--   <a id = "passwordProject" class = " btn btn-info" href = "Compiler_index.html" target = "_blank"> Project Link</a>-->
                         </div>
-                        <div class = "col-md bg-light text-dark shadow-lg ml-1 mr-1 pb-3">
+                        <div class = "col-md bg-light text-dark shadow-lg ml-1 mr-1 pb-3" style="position: relative">
                             <h2>My website</h2>
                             <p class = "h5">This website was created using HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Its primary purpose is to showcase my abilities as a programmer which include: front-end development, graphic design, web formatting, and user experience.</p>
-                            <a class = " btn btn-info" href = "https://github.com/MichaelCummins/Website/tree/master/THIS%20IS%20YOUR%20WEBSITE" target = "_blank">Source Code</a>
+                            <a class = " btn btn-info" href = "https://github.com/MichaelCummins/Website/tree/master/THIS%20IS%20YOUR%20WEBSITE" style = "position: absolute; left: 0; bottom: 0" target = "_blank">Source Code</a>
                         </div>
                     </div>
                     <br>
@@ -86,7 +107,7 @@
                             <div id = "skillsChart" style = "padding-right: 3%; width: 100%;"></div>
                         </div>
                         <div class = "col-sm">
-<div>
+                            <div>
                             <h4>Proficiency</h4>
                             <div id = "skillsChart" class = "list-group list-group-striped push-top">
                                 <div class = "list-group-item" >
@@ -193,6 +214,7 @@
             <section class = "footer" id = "contact">
                 <div class = "container text-center pb-4">
                     <h2 class="display-3">Thank you!</h2>
+                    <button class = "btn btn-info" onclick = "toggleSideBar()">Contact Me</button>
                     <p class = "h3">Feel free to email me at Mcjanuary19@gmail.com</p>
                     <br>
                     <img src ="Monogram.png" alt = "monogram" height = "104" width = "84">
