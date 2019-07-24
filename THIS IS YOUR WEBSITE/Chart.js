@@ -31,6 +31,7 @@ function toggleSideBar(){
     }
 }
 
+
 window.onload = function() {
 
 Highcharts.chart('skillsChart', {
