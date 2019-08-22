@@ -7,7 +7,6 @@ function scrollToTop() {
     } else clearTimeout(scrollAnimation);
 }
 
-
 function openNav() {
   document.getElementById("sidebar").style.width = "500px";
   document.getElementById("main").style.marginLeft = "500px";
@@ -30,7 +29,6 @@ function toggleSideBar(){
         return openNav();
     }
 }
-
 
 window.onload = function() {
 

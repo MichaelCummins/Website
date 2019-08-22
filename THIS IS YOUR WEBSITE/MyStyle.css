@@ -126,6 +126,7 @@ img{
   font-size: 36px;
   margin-left: 50px;
 }
+
 .padding{
     padding-bottom: 10%;
     padding-top: 10%;
@@ -160,3 +161,15 @@ textarea{
     height: 300px;
 }
 
+
+@media (max-width: 576px) {
+    #navBar{
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 576px) {
+    #navBar{
+        font-size: 2vw;
+    }
+}
