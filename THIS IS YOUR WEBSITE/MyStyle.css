@@ -55,7 +55,7 @@ body, html{
 
 hr{
     border-top: 30px solid rgba(255, 255, 255,.9);
-    width: 30%;
+    width: 10vw;
     padding-bottom: 50px;
 }
 
@@ -134,7 +134,7 @@ img{
 
 nav{
     opacity: .7;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 a:hover{
@@ -161,15 +161,26 @@ textarea{
     height: 300px;
 }
 
+.projects-container{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+ 
+}
 
-@media (max-width: 576px) {
-    #navBar{
-        font-size: 2vw;
+.project{
+    flex-basis: 23%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 900px){
+    .projects-container{
+    display: flex;
+    justify-content: space-between;   
     }
 }
 
-@media (min-width: 576px) {
-    #navBar{
-        font-size: 2vw;
-    }
-}
+
+
+
