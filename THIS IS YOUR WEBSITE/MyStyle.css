@@ -161,18 +161,12 @@ textarea{
     height: 300px;
 }
 
-.projects-container{
-    max-width: 1400px;
-    margin: 40px auto 0 auto;
- 
-}
-
-.project{
+/*.project{
     flex-basis: 23%;
     padding: 15px;
     box-sizing: border-box;
     margin-bottom: 20px;
-}
+}*/
 
 @media (min-width: 900px){
     .projects-container{
