@@ -8,10 +8,10 @@ function scrollToTop() {
 }
 
 function openNav() {
-  document.getElementById("sidebar").style.width = "500px";
-  document.getElementById("main").style.marginLeft = "500px";
-  document.getElementById("navBar").style.marginLeft = "500px";
-  document.getElementById("navBar").style.width = "80%";
+  document.getElementById("sidebar").style.width = "25vw";
+  document.getElementById("main").style.marginLeft = "25vw";
+  document.getElementById("navBar").style.marginLeft = "25vw";
+  document.getElementById("navBar").style.width = "75vw";
 }
 
 function closeNav() {
@@ -23,7 +23,7 @@ function closeNav() {
 
 function toggleSideBar(){
     var navSize = document.getElementById("sidebar").style.width;
-    if(navSize == "500px"){
+    if(navSize == "25vw"){
         return closeNav();
     }else{
         return openNav();
