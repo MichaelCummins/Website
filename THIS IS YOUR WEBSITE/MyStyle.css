@@ -2,11 +2,16 @@ body, html{
     height: 100%;
     background: lightblue;
     text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
 }
+
+
 
 .bg{
     background-image: url("https://www.connect.media/wp-content/uploads/2018/12/top_Manhattan-Skyline-One-World-Trade-Center.jpg");
+    
     min-height: 100%;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
