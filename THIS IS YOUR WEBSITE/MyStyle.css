@@ -189,5 +189,8 @@ textarea{
     font-size: 2vw;
 }
 
+h1 h2 p{
+    text-shadow: 1px 1px;
+}
 
 
