@@ -114,6 +114,9 @@ img{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  -moz-box-shadow:    5px 0 5px 0 #555;
+  -webkit-box-shadow: 5px 0 5px 0 #555;
+  box-shadow:         5px 0 5px 0 #555;
 }
 
 .sidebar a {
