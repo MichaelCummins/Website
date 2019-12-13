@@ -57,6 +57,9 @@ body, html{
     padding-bottom: 25px;
     padding-top: 25px;
     font-size: 30px;
+    -moz-box-shadow:    0 -5px 5px 0 #555;
+    -webkit-box-shadow: 0 -5px 5px 0 #555;
+    box-shadow:         0 -5px 5px 0 #555;
 }
 
 hr{
@@ -70,6 +73,9 @@ hr{
     display: block;
     padding-bottom: 25px;
     padding-top: 25px;
+    -moz-box-shadow:    0 5px 5px 0 #555;
+    -webkit-box-shadow: 0 5px 5px 0 #555;
+    box-shadow:         0 5px 5px 0 #555;
 }
 .projects{
     background-color: #00acee ;
@@ -77,6 +83,7 @@ hr{
     display: block;
     padding-bottom: 25px;
     padding-top: 25px;
+    
 }
 
 .volunteer{
