@@ -29,10 +29,12 @@ Highcharts.chart('skillsChart', {
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
+        textShadow: true,
         type: 'pie',
         backgroundColor:'rgba(255, 255, 255, 0.0)',
         width: 600,
-        height: 600
+        height: 600,
+     
     },
     
     title: {
@@ -44,7 +46,7 @@ Highcharts.chart('skillsChart', {
     },
     
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+        pointFormat: '<b>{point.percentage:.1f}%</b>',
         style: {
             fontSize: '22px',
             fontWeight: 'bold'
@@ -94,7 +96,12 @@ Highcharts.chart('skillsChart', {
             name: 'Java',
             y: 25
         }]
-    }]
+    }],
+    
+    credits: {
+    enabled: false
+  },
+    
 });
 
 }
