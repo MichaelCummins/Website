@@ -19,6 +19,11 @@ body, html{
     background-attachment: fixed;
 }
 
+#leftside{
+    height:500px;
+    background-color: lightcoral;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
