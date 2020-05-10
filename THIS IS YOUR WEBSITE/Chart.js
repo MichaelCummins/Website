@@ -1,7 +1,7 @@
 
 function openNav() {
   document.getElementById("sidebar").style.width = "25vw";
-  document.getElementById("main").style.marginLeft = "25vw";
+  document.getElementById("main").style.marginLeft = "10vw";
   document.getElementById("navBar").style.marginLeft = "25vw";
   document.getElementById("navBar").style.width = "75vw";
 }
@@ -20,6 +20,14 @@ function toggleSideBar(){
     }else{
         return openNav();
     }
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
 }
 
 window.onload = function() {
