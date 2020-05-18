@@ -15,6 +15,7 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-y:auto;
 }
 
 #home{
@@ -273,9 +274,10 @@ h1, h2{
         margin-right: auto;
         width: 50%;
     }
+    
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (max-width: 991.98px) { 
     
     img {
         width: 350px;
@@ -291,6 +293,19 @@ h1, h2{
     
     .centerText{
         clear: both;
+    }
+    
+    .collpasePlease{
+        height: 100vh;
+    }
+    
+    #burger{
+        font-size: 100px;
+    }
+    
+    #navItem{
+        font-size: 5vh;
+        min-height: 14vh;
     }
 }
 
