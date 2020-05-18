@@ -296,7 +296,7 @@ h1, h2{
     }
     
     .collpasePlease{
-        height: 100vh;
+        height: 60vh;
     }
     
     #burger{
@@ -306,6 +306,15 @@ h1, h2{
     #navItem{
         font-size: 4vh;
         min-height: 10vh;
+    }
+    
+    #monogramBottom{
+        width: 150px;
+        height: 150px;
+    }
+    
+    html{
+        font-size: 20px;
     }
 }
 
