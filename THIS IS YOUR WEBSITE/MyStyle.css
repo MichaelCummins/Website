@@ -316,5 +316,13 @@ h1, h2{
     html{
         font-size: 20px;
     }
+    
+    #skillsChart{
+        display: none;
+    }
+    
+    #center{
+         margin: auto;
+    }
 }
 
