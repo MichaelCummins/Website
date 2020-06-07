@@ -32,7 +32,7 @@ function toggleSideBar(){
             return openNav();
         }
     }else{
-        if(navSize == "vw"){
+        if(navSize == "25vw"){
             return closeNav();
         }else{
             return openNav();
