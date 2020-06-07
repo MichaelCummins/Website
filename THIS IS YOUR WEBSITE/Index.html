@@ -2,6 +2,7 @@
 <html>
     <head>
         <title> Michael Cummins Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" text = "text/css" href = "MyStyle.css"/>
@@ -42,19 +43,19 @@
                         <a id = "navItem" class = "nav-link text-light" href = "#home">Home</a>
                         <a id = "navItem" class = "nav-link text-light" href = "#about">About</a>
                         <a id = "navItem" class = "nav-link text-light" href = "#projects">Projects</a>
-                        <a id = "navItem" class = "nav-link text-light" href = "#skills">Skills</a>
+                        <!--<a id = "navItem" class = "nav-link text-light" href = "#skills">Esports</a>-->
                         <a id = "navItem" id = "toggle" class = "nav-link text-light" onclick="toggleSideBar()">Contact Me</a>
                         <a id = "navItem" class = "nav-link text-light" href = "Michael Cummins (7).pdf" target = "_blank">Resume</a>
                     </div>
                 </nav>
             </div>
             <section class = "container text-center padding" id = "home">
-                <h1 class = "display-1 p-3 text-secondary" style = "color: gray; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">Michael Cummins</h1>
+                <h1 class = "display-2 p-3 text-secondary " style = "color: gray; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">Michael Cummins</h1>
                 
-                <div class="quotes display-4 pb-3">Software Developer</div>
-                <div class="quotes display-4 pb-3">Game Designer</div>
-                <div class="quotes display-4 pb-3">Esports Coach</div>
-                <div class="quotes display-4 pb-3">Professional Gamer</div>
+                <div class="quotes display-4 pb-3 responsiveTextMedium">Software Developer</div>
+                <div class="quotes display-4 pb-3 responsiveTextMedium">Game Designer</div>
+                <div class="quotes display-4 pb-3 responsiveTextMedium">Esports Coach</div>
+                <div class="quotes display-4 pb-3 responsiveTextMedium">Professional Gamer</div>
                 
                 <ul class = "nav justify-content-center">
                     <li class = "nav-item"><a class = "fa fa-facebook" href = "https://www.facebook.com/michael.cummins.90?ref=bookmarks" target="_blank"></a></li>
@@ -66,30 +67,30 @@
             </section>
             <section class = "aboutMe text-center" id = "about">
                 <div class = "container pb-2 shadow-lg">
-                    <h1 class = "display-3">About me</h1>
+                    <h1 class = "display-3 responsiveTextBig">About me</h1>
                     <hr>
-                    <div class = "centerImg">
-                        <img class = "pr-3 " src = "Me.png" style=" float:left;">
+                    <div class = "centerYouImg">
+                        <img class = "pr-3 you " src = "Me.png" style="float:left;">
                     </div>
                     <div>
                         <div>
-                            <div class = "p-1 h5 row centerText  ml-2 mr-2 shadow-lg" style="background-color: #8CA57B;">   
+                            <div class = "p-1 h5 row centerText  ml-2 mr-2 shadow-lg responsiveText" style="background-color: #8CA57B;">   
                                 I graduated from Marist College in May of 2019 with a Bachelor's in Computer Science, as well as minors in Information Technology, Information Systems, and Cybersecurity. Currently, my main goal is to find an entry-level software development position that will allow me to utilize and build upon my current software knowledge.
                             </div>
                             <div>
                                 <div>
                                     <img  class = "bg-light mt-3 mb-3 rounded " src = "Unity.png" style = "width:150px; height:70px;">
                                 </div>
-                                <div class = "p-1 h5 row justify-content-center ml-2 mr-2 shadow" style="background-color: #8CA57B;" >
+                                <div class = "p-1 h5 row justify-content-center ml-2 mr-2 shadow responsiveText" style="background-color: #8CA57B;">
                                     I am currently working on learning Unity by creating a top-down 2D rogue-like game that procedurally generates levels so the player has a very different experience each time they hit play. I am using this as an opportunity to better myself as a software and game developer by combining learning C# scripting with game dev best practices.
                                     <div>
-                                        <a class = "btn btn-secondary shadow m-2" target="_blank" href="https://trello.com/b/m53Dn8Vz/rogue-like">Check out my Trello Board</a>
+                                        <a class = "btn btn-secondary shadow m-2 responsiveText" target="_blank" href="https://trello.com/b/m53Dn8Vz/rogue-like">Check out my Trello Board</a>
                                     </div>
                                 </div>
                             </div>
                             <div class>
                                 <img class = "mt-3 mb-3 ml-3 rounded" src = "eSportsLogoHEADER.jpg" style="width: 200px; height: 70px;">
-                                <div class = "p-1 h5 shadow" style="background-color: #8CA57B;">
+                                <div class = "p-1 h5 shadow responsiveText" style="background-color: #8CA57B;">
                                     During my senior year at Marist I was on one of their Collegiate Esports teams. Shortly after graduation I spoke with the athletics administration and stayed with the team as their coach. Currently I am responsible for:
                                     evaluating player and team performance
                                     discussing in-game strategy and how to improve critical thinking skills with the players
@@ -107,19 +108,19 @@
                     <hr>
                     <div class = "d-flex flex-column ">
                         <div class = "bg-light text-dark shadow-lg p-2 m-2 rounded">
-                            <h2>The Cummins Compiler</h2>
-                            <p class = "h5">The Cummins Compiler is a recursive descent parser based on a LL(1) grammar. The Compiler goes through each step of the compilation process: lexing, parsing, semantic analysis, and code generation. The UI of the compiler also offers a view of the Abstract Syntax Tree and Concrete Syntax Tree located near the bottom of the page along with the machine code. Created design using HTML and CSS. Compiler developed using JavaScript.</p>
+                            <h2 class = "responsiveTextMedium">The Cummins Compiler</h2>
+                            <p class = "h5 responsiveText">The Cummins Compiler is a recursive descent parser based on a LL(1) grammar. The Compiler goes through each step of the compilation process: lexing, parsing, semantic analysis, and code generation. The UI of the compiler also offers a view of the Abstract Syntax Tree and Concrete Syntax Tree located near the bottom of the page along with the machine code. Created design using HTML and CSS. Compiler developed using JavaScript.</p>
                             <div>
-                                <a class= "btn btn-info" href = "https://github.com/MichaelCummins/Projects/tree/master/Compiler" target="_blank">Source code</a>
-                                <a class= " btn btn-info" href = "Compiler_index.html" target="_blank">Project link</a>
+                                <a class= "btn btn-info responsiveText" href = "https://github.com/MichaelCummins/Projects/tree/master/Compiler" target="_blank">Source code</a>
+                                <a class= " btn btn-info responsiveText" href = "Compiler_index.html" target="_blank">Project link</a>
                             </div>
                         </div>
                         <div class = " bg-light text-dark shadow-lg p-2 m-2 rounded">
-                            <h2>Password Verifier</h2>
-                            <p class = "h5">This password validator is a java program that uses a Definite Finite Automata (DFA) to determine whether input from the user is a strong or weak password. The criteria used in constructing the DFA were: at least 1 uppercase letter, 1 lowercase letter, 1 digit, and 1 special character. This program is an easy to use application that enables users to choose the best password in order to enhance their personal security. Created using only Java.
+                            <h2 class = "responsiveTextMedium">Password Verifier</h2>
+                            <p class = "h5 responsiveText">This password validator is a java program that uses a Definite Finite Automata (DFA) to determine whether input from the user is a strong or weak password. The criteria used in constructing the DFA were: at least 1 uppercase letter, 1 lowercase letter, 1 digit, and 1 special character. This program is an easy to use application that enables users to choose the best password in order to enhance their personal security. Created using only Java.
                             </p>
-                            <a class = "btn btn-info" href = "https://github.com/MichaelCummins/CMPT440Cummins/tree/master/Prj/code" target="_blank">Source code</a>
-                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Project link</button>
+                            <a class = "btn btn-info responsiveText" href = "https://github.com/MichaelCummins/CMPT440Cummins/tree/master/Prj/code" target="_blank">Source code</a>
+                            <button type="button" class="btn btn-info responsiveText" data-toggle="modal" data-target="#myModal">Project link</button>
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" role="dialog">
                                 <div class="modal-dialog modal-lg">
@@ -139,94 +140,57 @@
                                 </div>
                             </div>
                         </div>
-                        <div class = " bg-light text-dark shadow-lg p-2 m-2 rounded">
-                            <h2>My Website</h2>
+                        <div class = "responsiveText bg-light text-dark shadow-lg p-2 m-2 rounded">
+                            <h2 class = "responsiveTextMedium">My Website</h2>
                             <p class = "h5">This website was created using HTML5, CSS3, JavaScript, jQuery, and Bootstrap. Its primary purpose is to showcase my abilities as a programmer which include: front-end development, graphic design, web formatting, and user experience.</p>
                             <a class = " btn btn-info" href = "https://github.com/MichaelCummins/Website/tree/master/THIS%20IS%20YOUR%20WEBSITE" target = "_blank">Source Code</a>
                         </div>
                         
-                        <div class = "bg-light text-dark shadow-lg p-2 m-2 rounded">
-                            <h2>Blizzard Database</h2>
+                        <div class = "responsiveText bg-light text-dark shadow-lg p-2 m-2 rounded">
+                            <h2 class = "responsiveTextMedium">Blizzard Database</h2>
                             <p class = "h5">This project is a mock database created for the gaming company Blizzard Entertainment in order to track elements of games they develop. Database was created using mySQL while the images for normal form were created using lucidchart. Business rules created to mimic a professional setting of what may be asked when creating a database from the ground up.</p>
-                            <a class = "btn btn-info" href="Databasefinalproject.pdf" target="_blank">Project Link</a>
+                            <a class = "responsiveText btn btn-info" href="Databasefinalproject.pdf" target="_blank">Project Link</a>
                         </div>
                     </div>
                     <br>
                 </div>
             </section>
+            <!--
             <section class = "skills" id = "skills">
                 <div class = "container pb-5">
                     <br>
-                    <h1 class = "display-3 text-center">Skills</h1>
+                    <h1 class = "display-3 text-center">Esports</h1>
                     <hr>
-                    <div class = "row text-center align-right " id = "Chart">
-                       <!-- <div class = "col-sm" id = "skillsChart">
-                            <div class = "pr-2"></div>
-                        </div>-->
-                        <div class = " col-5" id = "center" style="margin: auto">
-                            <div style="max-width: 400px">
-                                <h4 class="text-center ">Proficiency</h4>
-                                <div class = "shadow list-group list-group-striped push-top ">
-                                    <div class = "list-group-item" >
-                                    <div class = "text-medium">HTML</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">Java</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">95%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">CSS</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">JavaScript</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">SQL</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">Bootstrap</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">jQuery</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">Python</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                        </div>
-                                    </div>
-                                    <div class = "list-group-item">
-                                    <div class = "text-medium">Highcharts</div>
-                                        <div class = "progress progress-success">
-                                            <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">40%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class = "row justify-content-center text-center h5 responsiveText" >
+                        The main motivation for me in deciding what exactly I want to do professionally has been professional gaming. I have been following the evoloving scene for the past 7 years and have watched it grow into the global phenomenon it is today.
+                    </div>
+                    <div class = "text-center p-1">
+                        <img class = "rounded albanyPic" src="Esports_All.JPG" width="90%" height="700px" style="float: left;">
+                        <p class = "blockquote-footer" style="clear: right; position: relative; top: 300px;">
+                            ECAC tournament, Albany Center, Albany, NY
+                        </p>
+                    </div>
+                    
+                    <div class = "row justify-content-center" style="clear: both;">
+                        <div class = "col justify-content-center h4 ">
+                            <img style = "float: left" class = "rounded" src = "Esports_You.jpg" height="500px" width="300px">
+                            <p class = "h5 responsiveText" style = "clear: both;">
+                                I am greatful to have had the experience to live out my dream of playing professionally in front of hundreds of people.
+                            </p>
+                        </div>
+                        <div class = "col justify-content-center h4">
+                            <img  style = "float: left" class = "rounded" src = "Esports_Pic.jpg" height="500px" width="300px">
+                            <p class = "blockquote-footer responsiveText" style = "clear: both;">
+                                Gift from the team depicting everyone with attributes from their character
+                            </p>
+                        </div>
+                        <div class = "responsiveText col justify-content-center h4">
+                            My main goal in life is to live out my dream of being a game designer. Being able to make at least one person's day better through a game that I created would mean the absolute world to me.
                         </div>
                     </div>
                 </div>
             </section>
+-->
             <section class = "footer" id = "contact">
                 <div class = "container text-center pb-4">
                     <h2 class="display-1 ">Thank you!</h2><br>

@@ -74,12 +74,13 @@ body, html{
 
 hr{
     border-top: 30px solid rgba(255, 255, 255,.9);
-    width: 10vw;
+    width: 150px;
     padding-bottom: 50px;
 }
 
 .skills{
-    background-color: #0093cc;
+    background-color: #3e4559;
+    color: floralwhite;
     display: block;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -87,6 +88,7 @@ hr{
     -webkit-box-shadow: 0 5px 5px 0 #555;
     box-shadow:         0 5px 5px 0 #555;
 }
+
 .projects{
     background-color: #4a739c;
     color: floralwhite;
@@ -208,12 +210,6 @@ textarea{
     margin-bottom: 20px;
 }*/
 
-@media (min-width: 900px){
-    .projects-container{
-    display: flex;
-    justify-content: space-between;   
-    }
-}
 
 #sidebarAttribute{
     font-size: 2vw;
@@ -240,17 +236,78 @@ h1, h2{
         font-size: 13px;
     }
     
-    img{
-        width: 200px;
-        height: 200px;
-        float: none;
-    }
     
     .centerText{
         clear: both;
     }
     
-    .centerImg{
+    .you{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .centerYouImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+}
+
+
+@media(max-width: 412px){
+    .centerText{
+        clear: both;
+    }
+    
+    .you{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .centerYouImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+
+/*iphone x*/
+@media (max-width: 376px){
+    
+    albanyPic{
+        width: 200px;
+        height: 200px;
+    }
+    .you{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .centerYouImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+/*Pixel 2 XL */
+@media (max-width: 411px){
+    
+    albanyPic{
+        width: 200px;
+        height: 200px;
+    }
+    .you{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .centerYouImg{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -259,36 +316,42 @@ h1, h2{
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    img {
-        width: 300px;
-        height: 300px;
-    }
+    
     
     .centerText{
         clear: both;
     }
     
-    .centerImg{
+    .you{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .centerYouImg{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 40%;
     }
     
+    .albanyPic{
+        width: 100px;
+        height: 100px;
+    }
 }
 
-@media (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) { 
     
-    img {
-        width: 350px;
-        height: 350px;
+    .you{
+        width: 300px;
+        height: 300px;
     }
     
-    .centerImg{
+    .centerYouImg{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 40%;
     }
     
     .centerText{
@@ -300,11 +363,11 @@ h1, h2{
     }
     
     #burger{
-        font-size: 100px;
+        font-size: 5vw;
     }
     
     #navItem{
-        font-size: 4vh;
+        font-size: 3vh;
         min-height: 10vh;
     }
     
@@ -317,12 +380,8 @@ h1, h2{
         font-size: 20px;
     }
     
-    #skillsChart{
-        display: none;
-    }
     
     #center{
          margin: auto;
     }
 }
-
