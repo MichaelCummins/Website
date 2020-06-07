@@ -27,14 +27,14 @@
                     <div class = "form-group w-75 pl-4"> 
                         <label for = "message" style="">Message</label>
                         <div>
-                            <textarea name = "message" placeholder = "Enter message"></textarea>
+                            <textarea class = "messageArea" name = "message" placeholder = "Enter message"></textarea>
                         </div>
                     </div>
                     <button class = "btn btn-dark w-25 ml-4" type = "submit" value = "Send Message" id = "sidebarSendMessageButt">Send Message</button>
                 </form>
             </div>
         <div id = "main" class = "bg">
-            <div>
+            <div class = "navPleaseGoAway">
                 <nav id = "navBar" class = "container-fluid navbar navbar-expand-lg navbar-light fixed-top">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span id = "burger" class="navbar-toggler-icon"></span>
@@ -50,12 +50,12 @@
                 </nav>
             </div>
             <section class = "container text-center padding" id = "home">
-                <h1 class = "display-2 p-3 text-secondary " style = "color: gray; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">Michael Cummins</h1>
+                <h1 class = "display-2 p-3 text-secondary titleName" style = "color: gray; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">Michael Cummins</h1>
                 
-                <div class="quotes display-4 pb-3 responsiveTextMedium">Software Developer</div>
-                <div class="quotes display-4 pb-3 responsiveTextMedium">Game Designer</div>
-                <div class="quotes display-4 pb-3 responsiveTextMedium">Esports Coach</div>
-                <div class="quotes display-4 pb-3 responsiveTextMedium">Professional Gamer</div>
+                <div class="quotes display-4 pb-3 ">Software Developer</div>
+                <div class="quotes display-4 pb-3 ">Game Designer</div>
+                <div class="quotes display-4 pb-3 ">Esports Coach</div>
+                <div class="quotes display-4 pb-3 ">Professional Gamer</div>
                 
                 <ul class = "nav justify-content-center">
                     <li class = "nav-item"><a class = "fa fa-facebook" href = "https://www.facebook.com/michael.cummins.90?ref=bookmarks" target="_blank"></a></li>
@@ -193,7 +193,7 @@
 -->
             <section class = "footer" id = "contact">
                 <div class = "container text-center pb-4">
-                    <h2 class="display-1 ">Thank you!</h2><br>
+                    <h2 class="display-1 thankYou">Thank you!</h2><br>
                     <button class = "btn shadow btn-secondary btn-lg" onclick = "toggleSideBar()">Contact Me</button>
                     <br>
                     <br>

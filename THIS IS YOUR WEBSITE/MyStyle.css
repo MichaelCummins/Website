@@ -183,32 +183,13 @@ a:hover{
     text-decoration: none;
 }
 
-.carouselBoarder{
-    border: 10px;
-    border-color: #b3b3ff;
-    border-style: solid;
-}
-
-.carousel-item{
-    padding-left: 10px;
-
-}
-
-#carouselExampleIndicators{
-    background-color:  #ffa366;
-}
 
 textarea{
     width: 400px;
     height: 300px;
 }
 
-/*.project{
-    flex-basis: 23%;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}*/
+
 
 
 #sidebarAttribute{
@@ -282,6 +263,7 @@ h1, h2{
         width: 200px;
         height: 200px;
     }
+    
     .you{
         width: 200px;
         height: 200px;
@@ -292,6 +274,65 @@ h1, h2{
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+    }
+    
+    .titleName{
+        font-size: 12vw;
+    }
+    
+    .quotes{
+        font-size: 10vw;
+    }
+    
+    .thankYou{
+        font-size: 17vw;
+    }
+    
+    .sidebar {
+      height: 10;
+      width: 100;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      -moz-box-shadow:    5px 0 5px 0 #555;
+      -webkit-box-shadow: 5px 0 5px 0 #555;
+      box-shadow:         5px 0 5px 0 #555;
+    }
+
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color:darkgray;
+    }
+    
+    #sidebarAttribute{
+        font-size: 7vw;
+    }
+    
+    .messageArea{
+        width: 300px;
+        height: 200px;
     }
 }
 
@@ -312,6 +353,15 @@ h1, h2{
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+    }
+    
+    #burger{
+        font-size: 5vw;
+    }
+    
+    #navItem{
+        font-size: 3vh;
+        min-height: 10vh;
     }
 }
 
