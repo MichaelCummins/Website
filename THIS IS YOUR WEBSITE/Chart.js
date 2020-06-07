@@ -3,7 +3,7 @@ function openNav() {
     if(screen.width < 1000){
         document.getElementById("sidebar").style.width = "100vw";
         document.getElementById("main").style.marginLeft = "0vw";
-       //document.getElementById("navBar").style.marginLeft = "0px";
+        //document.getElementById("navBar").style.marginLeft = "0px";
         //document.getElementById("navBar").style.width = "0px";
     }else{
         document.getElementById("sidebar").style.width = "25vw";
@@ -13,11 +13,11 @@ function openNav() {
     }
 }
 
-function closeNav() {
-  document.getElementById("sidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.getElementById("navBar").style.marginLeft = "0";
-  document.getElementById("navBar").style.width = "100%";    
+function closeNav() { 
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("navBar").style.marginLeft = "0";
+    document.getElementById("navBar").style.width = "100%";    
 }
 
 
@@ -32,7 +32,7 @@ function toggleSideBar(){
             return openNav();
         }
     }else{
-        if(navSize == "25vw"){
+        if(navSize == "vw"){
             return closeNav();
         }else{
             return openNav();
