@@ -255,13 +255,17 @@ h1, h2{
     }
 }
 
-
 /*iphone x*/
 @media (max-width: 376px){
     
-    albanyPic{
-        width: 200px;
-        height: 200px;
+    .albanyPic{
+        width: 50vw;
+        height: 60vw;
+    }
+    
+    .plaguePic{
+        width:  50vw;
+        height: 65vw;
     }
     
     .you{
