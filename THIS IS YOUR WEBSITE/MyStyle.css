@@ -1,8 +1,8 @@
 body, html{
     text-shadow: 1px 4px 8px rgba(0,0,0,0.2);
     overflow-x: hidden;
-    scroll-behavior: smooth;
     overflow-wrap: break-word;
+    scroll-behavior: smooth;
 }
 
 
